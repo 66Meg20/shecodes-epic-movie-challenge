@@ -64,6 +64,14 @@
         text-transform: uppercase;
         font-weight: bold;
       }
+      .videos {
+        display: flex;
+        justify-content: space-around;
+        transition: all 1500ms ease-in-out;
+      }
+      .videos:hover {
+        transform: scale(1.2);
+      }
     </style>
   </head>
   <body>
@@ -113,15 +121,30 @@
         closer to true freedom and equality.
       </p>
     </div>
-    <iframe
-      width="560"
-      height="315"
-      src="https://www.youtube.com/embed/9HbNWGBqMkc"
-      title="YouTube video player"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      allowfullscreen
-    ></iframe>
+    <section class="videos">
+      <iframe
+        src="https://www.youtube.com/embed/9HbNWGBqMkc"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+
+      <iframe
+        src="https://www.youtube.com/embed/t16C7WTUx_w"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+      <iframe
+        src="https://www.youtube.com/embed/6Rec3amLcRg"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    </section>
     <img
       src="https://static.myfigurecollection.net/upload/items/1/1131155-01ae2.jpg"
       alt=""
