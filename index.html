@@ -51,8 +51,18 @@
         grid-template-columns: 1fr 1fr 1fr;
       }
       .about-movie {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 50px;
+        gap: 75px;
+      }
+      .about-movie p {
+        line-height: 1.5;
+      }
+      .about-movie span {
+        text-transform: uppercase;
+        font-weight: bold;
       }
     </style>
   </head>
@@ -68,20 +78,28 @@
         </a>
       </button>
     </header>
+
     <div class="about-movie">
       <img
         src="https://64.media.tumblr.com/77b54acdc087a39057a4bcb20c6dbcee/f8141a1c61c391ba-fa/s500x750/db536bf6a44edeb7e5638d50d340ff4292c3b22b.jpg"
         alt=""
         class="mvi-img"
       />
+
       <p>
+        <span>Written by:</span>
         The screenwriter for this profound story is by Takuya Yamanaka
         (山中拓也).
         <br />
+        <br />
+        <br />
+        <span>cast:</span>
         La Danse Macabre is a drama in which the members of IDOLiSH7, TRIGGER,
         Re: vale, and ŹOOĻ are mixed up together in a dystopian society. TRIGGER
         will be in charge of the theme song!
         <br />
+        <br /><br />
+        <span>story:</span>
         La Danse Macabre STORY The world has been split in two. The Ark, which
         floats in the sky, radiating light, and the Surface, a wasteland whose
         inhabitants fight for what little scraps they have left. Libel, the
