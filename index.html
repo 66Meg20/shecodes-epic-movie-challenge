@@ -95,6 +95,7 @@
         margin: 0;
         padding: 0;
         overflow: scroll;
+        overflow-y: hidden;
         scroll-behavior: smooth;
       }
       .slide-arrow {
@@ -306,5 +307,20 @@
       />
     </div>
   </body>
-  <script></script>
+  <script>
+    const slidesContainer = document.getElementById("slides-container");
+    const slide = document.querySelector(".slide");
+    const prevButton = document.getElementById("slide-arrow-prev");
+    const nextButton = document.getElementById("slide-arrow-next");
+
+    nextButton.addEventListener("click", (event) => {
+      const slideWidth = slide.clientWidth;
+      slidesContainer.scrollLeft += slideWidth;
+    });
+
+    prevButton.addEventListener("click", (event) => {
+      const slideWidth = slide.clientWidth;
+      slidesContainer.scrollLeft -= slideWidth;
+    });
+  </script>
 </html>
