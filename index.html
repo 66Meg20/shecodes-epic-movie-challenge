@@ -64,13 +64,26 @@
         text-transform: uppercase;
         font-weight: bold;
       }
+      .about-heading {
+        display: block;
+        text-transform: uppercase;
+        font-size: 27px;
+        margin-bottom: 30px;
+      }
       .videos {
         display: flex;
         justify-content: space-around;
+      }
+      .embed {
         transition: all 1500ms ease-in-out;
       }
-      .videos:hover {
+      .embed:hover {
         transform: scale(1.2);
+      }
+      .video-heading {
+        text-transform: capitalize;
+        margin-left: 100px;
+        font-size: 30px;
       }
     </style>
   </head>
@@ -95,6 +108,7 @@
       />
 
       <p>
+        <span class="about-heading">la danse macabre</span>
         <span>Written by:</span>
         The screenwriter for this profound story is by Takuya Yamanaka
         (山中拓也).
@@ -121,8 +135,10 @@
         closer to true freedom and equality.
       </p>
     </div>
+    <p class="video-heading">Videos</p>
     <section class="videos">
       <iframe
+        class="embed"
         src="https://www.youtube.com/embed/9HbNWGBqMkc"
         title="YouTube video player"
         frameborder="0"
@@ -131,6 +147,7 @@
       ></iframe>
 
       <iframe
+        class="embed"
         src="https://www.youtube.com/embed/t16C7WTUx_w"
         title="YouTube video player"
         frameborder="0"
@@ -138,6 +155,7 @@
         allowfullscreen
       ></iframe>
       <iframe
+        class="embed"
         src="https://www.youtube.com/embed/6Rec3amLcRg"
         title="YouTube video player"
         frameborder="0"
