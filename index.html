@@ -227,15 +227,15 @@
         <img
           src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/085/107/original/vida.jpg?1686425831"
           alt=""
-          class="slide"
-          id="pop-btn"
+          class="slide pop-btn"
         />
 
         <img
           src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/085/121/original/placer.jpg?1686431471"
           alt=""
-          class="slide"
+          class="slide tamaki-btn"
         />
+
         <img
           src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/085/108/original/konoe.jpg?1686425907"
           alt=""
@@ -319,6 +319,18 @@
         brutal, and confident, Vida is the strongest fighter of the group.
       </p>
     </div>
+    <div class="pop-up-image" id="tamaki-pop-up">
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/085/121/original/placer.jpg?1686431471"
+        alt=""
+        class="slide"
+      />
+      <p>
+        Placer (Tamaki Yotsuba) An Eye for an Eye, a Tooth for a Tooth One of
+        Kokujohyako’s combatants. Placer is a destructive hedonist who always
+        mainatins a relaxed, carefree disposition.
+      </p>
+    </div>
 
     <div class="reccomend-img">
       <img
@@ -350,10 +362,15 @@
       slidesContainer.scrollLeft -= slideWidth;
     });
     let popUp = document.querySelector("#pop-up");
-    let popUpBtn = document.querySelector("#pop-btn");
+    let popUpBtn = document.querySelector(".pop-btn");
 
     popUpBtn.addEventListener("click", () => {
       popUp.classList.toggle("active");
+    });
+    let tamaki = document.querySelector("#tamaki-pop-up");
+    let tamakiBtn = document.querySelector(".tamaki-btn");
+    tamakiBtn.addEventListener("click", () => {
+      tamaki.classList.toggle("active");
     });
   </script>
 </html>
