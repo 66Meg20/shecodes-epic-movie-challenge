@@ -130,12 +130,16 @@
         padding-left: 0.75rem;
         border-radius: 2rem 0 0 2rem;
       }
-      .pop-up-image {
+      .about-characters {
         display: grid;
         justify-content: center;
         align-content: center;
         gap: 10px;
         grid-auto-flow: column;
+      }
+      .about-characters p {
+        max-width: 250px;
+        font-size: 20px;
       }
     </style>
   </head>
@@ -322,11 +326,17 @@
         />
       </div>
     </section>
-    <img
-      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/085/107/original/vida.jpg?1686425831"
-      alt=""
-      class="clicked-img"
-    />
+    <div class="about-characters">
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/085/107/original/vida.jpg?1686425831"
+        alt=""
+        class="shown-img"
+      />
+      <p class="shown-text">
+        Vida, 'Chaos in the Skin of a Man'. Kokujohyako’s leader. Crude, brutal,
+        and confident, Vida is the strongest fighter of the group.
+      </p>
+    </div>
 
     <div class="reccomend-img">
       <img
@@ -357,7 +367,8 @@
       const slideWidth = slide.clientWidth;
       slidesContainer.scrollLeft -= slideWidth;
     });
-    let img = document.querySelector(".clicked-img");
+    let img = document.querySelector(".shown-img");
+    let text = document.querySelector(".shown-text");
     let btn1 = document.querySelector("#vida-btn");
     let btn2 = document.querySelector("#placer-btn");
     let btn3 = document.querySelector("#konoe-btn");
@@ -378,66 +389,98 @@
     btn1.addEventListener("click", () => {
       img.src =
         "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/085/107/original/vida.jpg?1686425831";
+      text.textContent =
+        "Vida, 'Chaos in the Skin of a Man'. Kokujohyako’s leader. Crude, brutal, and confident, Vida is the strongest fighter of the group.";
     });
     btn2.addEventListener("click", () => {
       img.src =
         "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/085/121/original/placer.jpg?1686431471";
+      text.textContent =
+        "Placer, 'An Eye for an Eye, a Tooth for a Tooth'. One of Kokujohyako’s combatants. Placer is a destructive hedonist whoalways mainatins a relaxed, carefree disposition.";
     });
     btn3.addEventListener("click", () => {
       img.src =
         "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/085/108/original/konoe.jpg?1686425907";
+      text.textContent =
+        "Konoe, 'The Underground’s Errand Boy'. A mysterious youth living in the Underground. Despite his rough looks, Konoe is cheerful and has a kind heart.";
     });
     btn4.addEventListener("click", () => {
       img.src =
         "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/085/122/original/kabane.jpg?1686431563";
+      text.textContent =
+        "Kabane, 'A Living Corpse'. A mysterious youth living in the Underground. Has a blank, lifeless gaze and will not interact with Kuon, unless it’s through Konoe.";
     });
     btn5.addEventListener("click", () => {
       img.src =
         "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/085/124/original/leiden.jpg?1686431666";
+      text.textContent =
+        "Leiden, 'Power Equals Justice'. A soldier from the Unity Order. Has a simple, rough personality, and rarely stops to think before acting.";
     });
     btn6.addEventListener("click", () => {
       img.src =
         "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/085/125/original/misericorde.jpg?1686431764";
+      text.textContent =
+        "Misericorde, 'The Embodiment of Faith'. The second highest member of the Church of Nerve. Misericorde takes great pride in his authority over the church and the Ark.";
     });
     btn7.addEventListener("click", () => {
       img.src =
         "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/085/126/original/schau.jpg?1686431828";
+      text.textContent =
+        "Schau, 'Lethargic, Apathetic, Unempathetic'. A soldier from the Unity Order. Skilled with firearms, he is one of the top sharpshooters in all of the Unity Order.";
     });
     btn8.addEventListener("click", () => {
       img.src =
         "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/085/127/original/eternea.jpg?1686431900";
+      text.textContent =
+        "Eternea, 'Rules the Church of Nerve'. The top ruling member of the Ark through the Church of Nerve. Eternea speaks in a gentle tone and has a natural charisma that captivates those around him.";
     });
     btn9.addEventListener("click", () => {
       img.src =
         "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/085/128/original/fuga.jpg?1686431981";
+      text.textContent =
+        "Fuga, 'Rebellion’s Mood Maker who Idolizes Libel'. One of Rebellion’s combatants, a youth who keeps the organization’s spirits high. Holds a deep admiration for Libel, following him to even the most dangerous of missions.";
     });
     btn10.addEventListener("click", () => {
       img.src =
         "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/085/129/original/cura.jpg?1686432037";
+      text.textContent =
+        "Cura, 'A Bomber with Brains who Lives a Stressful Lifestyle'. The brains of the organization. Due to all the support he provides for Rebellion’s single-minded leader, Cura is under constant stress.";
     });
     btn11.addEventListener("click", () => {
       img.src =
         "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/085/130/original/kuon.jpg?1686432099";
+      text.textContent =
+        "Kuon, 'Lives with Serenity'. A mysterious youth living in the Underground. A lonely smile always adorns his lips. Kuon has a unique worldview, which often leads to him confusing his conversational partners.";
     });
     btn12.addEventListener("click", () => {
       img.src =
         "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/085/131/original/reue.jpg?1686432161";
+      text.textContent =
+        "Reue, 'An Opportunistic Middle Man'. Rules at the top of Unity Order. Elusive, opportunistic, and laid-back, with a dislike for any sort of trouble.";
     });
     btn13.addEventListener("click", () => {
       img.src =
         "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/085/132/original/arme.jpg?1686432210";
+      text.textContent =
+        "Arme, 'The Celestial Symbol for the Church of Nerve'. Commonly referred to as the Celestial, Arme symbolizes the Church of Nerve and rules over the Ark.";
     });
     btn14.addEventListener("click", () => {
       img.src =
         "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/085/134/original/horca.jpg?1686432265";
+      text.textContent =
+        "Horca, 'A Jeering Sage'. One of Kokujohyako’s combatants, and its financier. Horca is a hard worker who buys and sells stolen goods, builds weapons, and negotiates with any potential business contacts.";
     });
     btn15.addEventListener("click", () => {
       img.src =
         "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/085/135/original/qual.jpg?1686432325";
+      text.textContent =
+        "Qual, 'A Proud Pursuer'. An elite among elites in the Unity Order. Hates when things get too serious, but nonetheless has a strong sense of duty.";
     });
     btn16.addEventListener("click", () => {
       img.src =
         "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/085/136/original/libel.jpg?1686432395";
+      text.textContent =
+        "Libel, 'A Leader who Fights for the Surface'. Rebellion’s leader, who aspires to end the hierarchy between the Ark and the Surface.";
     });
   </script>
 </html>
