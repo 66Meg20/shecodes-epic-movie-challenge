@@ -80,9 +80,15 @@
       .mvi-img {
         width: 100%;
       }
-      .reccomend-img {
+      .recommend-img {
         display: flex;
         justify-content: space-around;
+      }
+      .poster {
+        transition: all 150ms ease-in-out;
+      }
+      .poster:hover {
+        transform: scale(0.85);
       }
 
       .about-movie {
@@ -110,7 +116,7 @@
         justify-content: space-around;
       }
       .embed {
-        transition: all 1500ms ease-in-out;
+        transition: all 150ms ease-in-out;
       }
       .embed:hover {
         transform: scale(1.2);
@@ -180,7 +186,6 @@
       footer {
         background-color: #ffffff;
         padding: 30px 0;
-        width: 100%;
       }
       .footer-i {
         display: block;
@@ -204,6 +209,13 @@
       }
 
       @media (max-width: 900px) {
+        nav {
+          margin: 15px;
+          display: inline;
+        }
+        nav i {
+          margin-bottom: 12px;
+        }
         header {
           padding: 20px 0 20px 0;
           margin-bottom: 30px;
@@ -258,6 +270,10 @@
           max-width: 100%;
           margin-bottom: 20px;
           text-align: center;
+        }
+        footer a {
+          font-size: 12px;
+          margin-bottom: 4px;
         }
       }
     </style>
@@ -472,8 +488,9 @@
         aspires to end the hierarchy between the Ark and the Surface.
       </p>
     </div>
-    <p class="heading-titles">Reccomended to watch</p>
-    <div class="reccomend-img">
+
+    <p class="heading-titles">Recommended to watch</p>
+    <div class="recommend-img">
       <a href="https://www.youtube.com/watch?v=_uTvqumZBqY" target="_blank">
         <img
           src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/085/140/original/fruits-basket-poster.jpg?1686432648"
@@ -511,7 +528,7 @@
           href="https://github.com/66Meg20/shecodes-epic-movie-challenge"
           target="_blank"
         >
-          Coded by Megan Jackson and open-sourced on GitHub</a
+          Open-source code on GitHub</a
         >
 
         <a
@@ -574,7 +591,7 @@
       img.src =
         "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/085/121/original/placer.jpg?1686431471";
       text.textContent =
-        "Placer, 'An Eye for an Eye, a Tooth for a Tooth'. One of Kokujohyako’s combatants. Placer is a destructive hedonist whoalways mainatins a relaxed, carefree disposition.";
+        "Placer, 'An Eye for an Eye, a Tooth for a Tooth'. One of Kokujohyako’s combatants. Placer is a destructive hedonist who always mainatins a relaxed, carefree disposition.";
     });
     btn3.addEventListener("click", () => {
       img.src =
